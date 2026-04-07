@@ -20,7 +20,12 @@ languages:
 
 An Azure Functions QuickStart project that demonstrates how to use a Cosmos DB Trigger with JavaScript and Azure Developer CLI (azd) for quick and easy deployment.
 
-> **Looking for another language?** This quickstart is also available in [C# (.NET)](https://github.com/Azure-Samples/functions-quickstart-dotnet-azd-cosmosdb), [Java](https://github.com/Azure-Samples/functions-quickstart-java-azd-cosmosdb), [TypeScript](https://github.com/Azure-Samples/functions-quickstart-typescript-azd-cosmosdb), [Python](https://github.com/Azure-Samples/functions-quickstart-python-azd-cosmosdb), and [PowerShell](https://github.com/Azure-Samples/functions-quickstart-powershell-azd-cosmosdb).
+> **Looking for another language?** This quickstart is also available in
+> [C# (.NET)](https://github.com/Azure-Samples/functions-quickstart-dotnet-azd-cosmosdb) |
+> [Java](https://github.com/Azure-Samples/functions-quickstart-java-azd-cosmosdb) |
+> [TypeScript](https://github.com/Azure-Samples/functions-quickstart-typescript-azd-cosmosdb) |
+> [Python](https://github.com/Azure-Samples/functions-quickstart-python-azd-cosmosdb) |
+> [PowerShell](https://github.com/Azure-Samples/functions-quickstart-powershell-azd-cosmosdb)
 
 ## Architecture
 
