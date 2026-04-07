@@ -122,6 +122,10 @@ dist
 # TernJS port file
 .tern-port
 
+# Azure Functions
+local.settings.json
+.vscode/.browse.c_cpp_properties.json
+
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 

@@ -1,0 +1,13 @@
+{
+  "name": "functions-quickstart-javascript-azd-cosmosdb",
+  "version": "1.0.0",
+  "description": "Azure Functions JavaScript CosmosDB Trigger Quickstart",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  }
+}
