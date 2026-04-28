@@ -123,7 +123,7 @@ module api './app/api.bicep' = {
     applicationInsightsName: monitoring.outputs.name
     appServicePlanId: appServicePlan.outputs.resourceId
     runtimeName: 'node'
-    runtimeVersion: '20'
+    runtimeVersion: '22'
     storageAccountName: storage.outputs.name
     enableBlob: storageEndpointConfig.enableBlob
     enableQueue: storageEndpointConfig.enableQueue
@@ -160,6 +160,7 @@ module cosmosDb './app/db.bicep' = {
     tags: tags
     databaseName: cosmosSettings.database
     containerName: cosmosSettings.container
+    leaseContainerName: cosmosSettings.leaseContainer
     vnetEnabled: vnetEnabled
   }
 }

@@ -5,7 +5,7 @@ app.cosmosDB('cosmos_trigger', {
     databaseName: '%COSMOS_DATABASE_NAME%',
     containerName: '%COSMOS_CONTAINER_NAME%',
     leaseContainerName: 'leases',
-    createLeaseContainerIfNotExists: true,
+    createLeaseContainerIfNotExists: false,
     handler: (documents, context) => {
         if (documents && documents.length > 0) {
             context.log(`Documents modified: ${documents.length}`);
