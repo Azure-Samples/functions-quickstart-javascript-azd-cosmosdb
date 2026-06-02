@@ -3,6 +3,7 @@ param tags object
 param resourceToken string
 param databaseName string
 param containerName string
+param leaseContainerName string
 
 @description('Enables serverless for this account. Defaults to false.')
 param enableServerless bool = true
@@ -112,6 +113,23 @@ resource cosmosDbContainer 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/c
             path: '/*'
           }
         ]
+      }
+    }
+  }
+}
+
+resource cosmosDbLeaseContainer 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2024-11-15' = {
+  parent: cosmosDbDatabase
+  name: !empty(leaseContainerName) ? leaseContainerName : 'leases'
+  properties: {
+    options: options
+    resource: {
+      id: !empty(leaseContainerName) ? leaseContainerName : 'leases'
+      partitionKey: {
+        paths: [
+          '/id'
+        ]
+        kind: 'Hash'
       }
     }
   }
