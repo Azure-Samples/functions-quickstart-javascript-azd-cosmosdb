@@ -1,0 +1,11 @@
+# This descriptor drives template package creation in the packaging pipeline.
+schemaVersion: 1
+identity: Azure.Functions.Templates.CosmosDbJavaScript
+description: Create a JavaScript Azure Functions app for Cosmos DB Trigger, with Bicep infrastructure for deployment using
+  azd.
+projects:
+- name: Azure Functions Cosmos DB Trigger (JavaScript)
+  shortName: functions-quickstart-javascript-cosmosdb
+  root: .
+  stack: node
+  language: JavaScript
